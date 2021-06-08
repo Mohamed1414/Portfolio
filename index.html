@@ -375,9 +375,9 @@
 		<!--portfolio filter-->
 		<div class="row">
 			<div class="portfolio-filter">
-				<span class="filter-item outer-shadow active" data-target="primer-proyecto">primer proyecto</span>
+				<span class="filter-item outer-shadow active" data-target="todos">todos</span>
 				<span class="filter-item" data-target="segundo-proyecto">segundo proyecto</span>
-				<span class="filter-item" data-target="tercer-proyecto">tercer-proyecto</span>
+				<span class="filter-item" data-target="tercer-proyecto">tercer proyecto</span>
 				<span class="filter-item" data-target="cuarto-proyecto">cuarto proyecto</span>
 				<span class="filter-item" data-target="quinto-proyecto">quinto proyecto</span>
 			</div>
@@ -386,7 +386,7 @@
 		<!--portfolio items-->
 		<div class="row portfolio-items">
 			<!--portfolio item-->
-			<div class="portfolio-item" data-category="web-aplication">
+			<div class="portfolio-item" data-category="todos">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
 						<img src="img/thumbnailweb.jpg" alt="portfolio">
@@ -417,10 +417,10 @@
 			</div>
 			<!--end of portfolio item-->
 			<!--portfolio item-->
-			<div class="portfolio-item" data-category="web-aplication">
+			<div class="portfolio-item" data-category="segundo-proyecto">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/thumbnailweb.jpg" alt="portfolio">
+						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg">
 						<!--view project btn-->
 						<span class="view-project"> view project</span>
 					</div>
@@ -448,10 +448,10 @@
 			</div>
 			<!--end of portfolio item-->
 			<!--portfolio item-->
-			<div class="portfolio-item" data-category="web-aplication">
+			<div class="portfolio-item" data-category="tercer-proyecto">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/thumbnailweb.jpg" alt="portfolio">
+						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg>
 						<!--view project btn-->
 						<span class="view-project"> view project</span>
 					</div>
@@ -479,10 +479,10 @@
 			</div>
 			<!--end of portfolio item-->
 			<!--portfolio item-->
-			<div class="portfolio-item" data-category="web-aplication">
+			<div class="portfolio-item" data-category="cuarto-proyecto">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/thumbnailweb.jpg" alt="portfolio">
+						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg>
 						<!--view project btn-->
 						<span class="view-project"> view project</span>
 					</div>
@@ -510,7 +510,7 @@
 			</div>
 			<!--end of portfolio item-->
 			<!--portfolio item-->
-			<div class="portfolio-item" data-category="web-aplication">
+			<div class="portfolio-item" data-category="quinto-proyecto" data-screenshots="img/thumbnailweb.jpg>
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
 						<img src="img/thumbnailweb.jpg" alt="portfolio">
@@ -546,6 +546,32 @@
 	<!--end of portfolio section-->
 	<!--portfolio popup-->
 	<div class="pp portfolio-popup">
+		<div class="pp-details">
+			<div class="pp-details-inner">
+				<div class="pp-title">
+					<h2>Personal portfolio</h2>
+					<p>Category - <span class="pp-project-category">"Web Application</span></p>
+				</div>
+				<div class="pp-project-details">
+					<div class="row">
+						<div class="description">
+							<h3>Project Brief</h3>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis rem odit iusto,
+							doloremque doloribus inventore praesentium accusantium perspiciati</p>
+						</div>
+						<div class="info">
+							<h3>Project info</h3>
+							<ul>
+								<li>Date - <span>2021</span></li>
+								<li>Tools - <span>herramientas usadas</span></li>
+								<li>Web - <span> <a href="#">www.enlacepaginaweb.com</a></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="separator"></div>
 		<div class="pp-main">
 			<div class="pp-main-inner">
 				<div class="pp-project-details-btn outer-shadow hover-in-shadow">
@@ -554,11 +580,19 @@
 				<img src="img/thumbnailweb.jpg" alt="img" class="pp-img outer-shadow">
 				<div class="pp-counter">1 of 6</div>
 			</div>
+			<div class="pp-loader">
+				<div></div>
+			</div>
+			<!--pp navigation-->
+			<div class="pp-prev"><i class="fas fa-play"></i></div>
+			<div class="pp-next"><i class="fas fa-play"></i></div>
+			<!-- end of pp navigation-->
 		</div>
 	</div>
-	<!--end of portfolio popup-->
+	<!--end of portfolio pop-up-->
 	<!--main javascript-->
 	<script src="js/main.js"></script>
 	<!--end of main javascript-->
+
 </body>
 </html>
