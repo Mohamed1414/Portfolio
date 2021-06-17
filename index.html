@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/colors.css">
 	<!--font awesome-->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<!--responsive css-->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<title>Personal Portfolio</title>
 </head>
 <body>
@@ -34,17 +36,18 @@
 		<div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
 		<div class="nav-menu-inner"></div>
 			<ul>
-				<li><a href="#" class="inner-shadow active">home</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">about</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">services</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">portfolio</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">testimonial</a></li>
-				<li><a href="#" class="outer-shadow hover-in-shadow">contact</a></li>	
+				<li><a href="#home" class="link-item inner-shadow active">home</a></li>
+				<li><a href="#about" class="link-item outer-shadow hover-in-shadow">about</a></li>
+				<li><a href="#services" class="link-item outer-shadow hover-in-shadow">services</a></li>
+				<li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a></li>
+				<li><a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a></li>	
 			</ul>
 	</nav>
+	<div class="fade-out-effect">
+	</div>
 	<!--end of nav menu-->
 	<!--home section-->
-	<section class="home-section section">
+	<section class="home-section section active" id="home">
 		<!--wrap effect-->
 		<div class="effect-wrap">
 			<div class="effect effect-1">
@@ -69,7 +72,7 @@
 					<p>Hello</p>
 					<h2>I'm Mohamed</h2>
 					<h1>Web Designer & Developer</h1>
-					<a href="#" class=" btn-1 outer-shadow hover-in-shadow"> More about me</a>
+					<a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow"> More about me</a>
 				</div>
 				<div class="home-img">
 					<div class="img-box inner-shadow">
@@ -81,7 +84,7 @@
 	</section>
 	<!--end of home section-->
 	<!--about section-->
-	<section class="about-section section">
+	<section class="about-section section" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -108,7 +111,7 @@
 					Sit enim officia quia consequatur cumque
 					soluta accusantium magnam dolore obcaecati laborum sint qui cum natus alias error, mollitia doloremque omnis ipsum.</p>
 					<a href="archivos/C.V Mohamed 2021 ES.pdf" class=" btn-1 outer-shadow hover-in-shadow"> Descarga C.V</a>
-					<a href="#" class=" btn-1 outer-shadow hover-in-shadow">Contacto</a>
+					<a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Contacto</a>
 				</div>
 			</div>
 			<!--about tabs-->
@@ -285,7 +288,7 @@
 	</section>
 	<!--end of about section-->
 	<!--service section-->
-	<section class="service-section section">
+	<section class="service-section section" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -364,7 +367,7 @@
 	</section>
 	<!--end of service section-->
 	<!--portfolio section-->
-	<section class="portfolio-section section">
+	<section class="portfolio-section section" id="portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="section-title">
@@ -451,7 +454,7 @@
 			<div class="portfolio-item" data-category="tercer-proyecto">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg>
+						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg">
 						<!--view project btn-->
 						<span class="view-project"> view project</span>
 					</div>
@@ -482,7 +485,7 @@
 			<div class="portfolio-item" data-category="cuarto-proyecto">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg>
+						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg">
 						<!--view project btn-->
 						<span class="view-project"> view project</span>
 					</div>
@@ -510,10 +513,10 @@
 			</div>
 			<!--end of portfolio item-->
 			<!--portfolio item-->
-			<div class="portfolio-item" data-category="quinto-proyecto" data-screenshots="img/thumbnailweb.jpg>
+			<div class="portfolio-item" data-category="quinto-proyecto">
 				<div class="portfolio-item-inner outer-shadow">
 					<div class="portfolio-item-img">
-						<img src="img/thumbnailweb.jpg" alt="portfolio">
+						<img src="img/thumbnailweb.jpg" alt="portfolio" data-screenshots="img/thumbnailweb.jpg">
 						<!--view project btn-->
 						<span class="view-project"> view project</span>
 					</div>
@@ -544,6 +547,77 @@
 		<!--end of portfolio items-->
 	</section>
 	<!--end of portfolio section-->
+	<!--contact section-->
+	<section class="contact-section section" id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="section-title">
+					<h2 data-heading="contact">Get in Touch</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!--contact item start-->
+				<div class="contact-item">
+					<div class="contact-item-inner outer-shadow">
+						<i class="fas fa-phone"></i>
+						<span>Phone</span>
+						<p>695 964 966</p>
+					</div>
+				</div>
+				<!--end of contact item-->
+				
+				<!--contact item start-->
+				<div class="contact-item">
+					<div class="contact-item-inner outer-shadow">
+						<i class="fas fa-envelope"></i>
+						<span>Email</span>
+						<p>mohabahs@gmail.com</p>
+					</div>
+				</div>
+				<!--end of contact item-->
+				
+				<!--contact item start-->
+				<div class="contact-item">
+					<div class="contact-item-inner outer-shadow">
+						<i class="fas fa-map-marker-alt"></i>
+						<span>Address</span>
+						<p>ejemplo de calle</p>
+					</div>
+				</div>
+				<!--end of contact item-->
+			</div>
+			<div class="row">
+				<div class="contact-form">
+					<form>
+						<div class="row">
+							<div class="w-50">
+								<div class="input-group outer-shadow hover-in-shadow">
+									<input type="text" placeholder="Name" class="input-control">
+								</div>
+								<div class="input-group outer-shadow hover-in-shadow">
+									<input type="text" placeholder="Email" class="input-control">
+								</div>
+								<div class="input-group outer-shadow hover-in-shadow">
+									<input type="text" placeholder="Subject" class="input-control">
+								</div>
+							</div>
+							<div class="w-50">
+								<div class="input-group outer-shadow hover-in-shadow">
+									<textarea class="input-control" placeholder="Message"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="submit-btn">
+								<button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--end of contact sesion-->
 	<!--portfolio popup-->
 	<div class="pp portfolio-popup">
 		<div class="pp-details">
